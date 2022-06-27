@@ -42,6 +42,9 @@ Array List:
 		
 		// or we can use :: double colon operator in Java 8
 		list.forEach(System.out::println);
+3.		//Tot
+		List<Integer> listOfMarks= Arrays.asList(1, 2, 3, 4, 5, 6, 7);
+		ICalculateService icalculateService = total -> listOfMarks.stream().mapToInt(Integer ::intValue).sum();	
 
 Normal Lamda Expression:
 1.		interface MathOperation {
